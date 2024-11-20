@@ -1,0 +1,143 @@
+body{
+    background-color: #F7ECDE;
+}
+.title{
+    
+   
+    border-bottom: black 2px dotted;
+}
+.title h1{
+    font-family:Pacifico ;
+    font-size:50px ;
+    font-weight:500 ;
+    color: 
+    rgb(53, 46, 40)
+    ;
+    position: relative;
+    margin-bottom: 50px;
+}
+.title h1::after{
+    content: '';
+    width: 265px;
+    height:17px ;
+    position: absolute;
+    top: 40px;
+    left: 420px;
+    background-color:#FEC260 ;
+    z-index: -11111111;
+    transition: height,top  .3s,.3s;
+}
+
+.title h1:hover::after{
+    height:35px ;
+    top:22px ;
+}
+
+.descrpt{
+   
+    padding: 25px 0;
+    /* background: linear-gradient(to right, #3DA55B, #B2AC49); */
+   
+}
+.descrpt span{
+    font-family:Righteous ;
+    font-size:25px ;
+    font-weight:500 ;
+    color: 
+    #B2AC49
+    ;
+}
+.descrpt i{
+    font-size: 25px;
+    color: #3DA55B;
+}
+
+
+
+.inputs label{
+    font-family:PT Sans Caption ;
+    font-size:16px ;
+    font-weight:600 ;
+    color: 
+rgb(33, 37, 41)
+    ;
+}
+::placeholder{
+    font-family:PT Sans Caption ;
+    font-size:16px ;
+    font-weight:400 ;
+    color: 
+rgba(33, 37, 41, 0.493)
+    ;
+    
+}
+
+.inputs input{
+    border-radius: 6px;
+    padding: 5px 10px;
+    border: solid 1px rgba(33, 37, 41, 0.199) ;
+    margin: 10px 0;
+}
+
+.inputs .butt button{
+    height:40px ;
+    width: 150px;
+    background-color:#D1512D ;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+}
+.inputs .butt button:hover{
+    background-color: #BB4120;
+}
+.table{
+    border-top: black 2px dotted;
+    padding: 30px 0;
+}
+
+.table{
+    padding: 50px 0;
+}
+.table th{
+    font-family:PT Sans Caption ;
+    font-size:16px ;
+    font-weight:700 ;
+    color: 
+rgb(33, 37, 41)
+    ;
+    padding: 10px 0;
+}
+.table td{
+    font-family:PT Sans Caption ;
+    font-size:16px ;
+    font-weight:400 ;
+    color: 
+rgb(33, 37, 41)
+    ;
+    padding: 15px 0;
+}
+.table .visit{
+    height:35px ;
+    width: 70px;
+    background-color:#9EB23B ;
+    color:#fff ;
+    border: none;
+    border-radius: 6px;
+    transition: backgroundcolor 0.5s;
+}
+.table .visit:hover{
+    background-color: #8A9E23;
+}
+.table .delete{
+    height:35px ;
+    width: 70px;
+    background-color:#EB1D36 ;
+    color:#fff ;
+    border: none;
+    border-radius: 6px;
+    transition: backgroundcolor 0.5s;
+}
+.table .delete:hover{
+    background-color: #D30820;
+}

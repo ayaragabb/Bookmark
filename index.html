@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Book Mark</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- ------------------fonts------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=PT+Sans+Caption:wght@400;700&family=Pacifico&family=Righteous&display=swap"
+      rel="stylesheet"
+    />
+    <!-- ------------------fonts------------------- -->
+
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <section>
+      <div class="container d-flex flex-wrap justify-content-center">
+        <div class="title w-100 text-center mt-5">
+          <h1>Bookmarker</h1>
+        </div>
+        <div class="descrpt w-100 text-center">
+          <i class="fa-solid fa-bookmark"></i>
+          <span>Bookmark your favorite sites</span>
+          <i class="fa-solid fa-bookmark"></i>
+        </div>
+
+        <div class="inputs w-75">
+          <label class="d-block" for="#name">
+            <i class="fa-solid fa-book-bookmark me-2"></i>
+            Site Name
+          </label>
+          <input
+            class="w-100"
+            type="text"
+            id="name"
+            placeholder="Bookmark Name"
+          />
+          <label class="d-block" for="#url">
+            <i class="fa-solid fa-link me-2"></i>
+            Site URL
+          </label>
+          <input class="w-100" type="url" id="url" placeholder="Website url" />
+          <div class="butt text-center mt-3">
+            <button onclick="addWebsite()" type="submit">Submit</button>
+          </div>
+        </div>
+
+        <div
+          class="table mt-5 text-center d-flex flex-wrap justify-content-center"
+        >
+          <table class="w-100">
+            <thead>
+              <tr>
+                <th>Index</th>
+                <th>Website Name</th>
+                <th>Visit</th>
+                <th>Delete</th>
+              </tr>
+            </thead>
+            <tbody id="tbody"></tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/index.js"></script>
+  </body>
+</html>
